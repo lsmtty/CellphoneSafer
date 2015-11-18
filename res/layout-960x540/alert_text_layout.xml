@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="拦截全部"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/rb_call"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="拦截电话"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/rb_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="拦截短信"
+            android:textSize="11sp" />
+    </RadioGroup>
+
+</LinearLayout>

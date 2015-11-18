@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+	<TextView
+	    android:id="@+id/main_title"
+		style="@style/style_title"
+	    android:text="功能列表"
+	    />
+    <TextView
+        android:layout_below="@id/main_title"
+        android:id="@+id/main_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您的手机从今以后不会再有危险了，我们替您的手机保驾护航，您真的非常有眼光" 
+        android:singleLine="true"
+        android:textSize="23sp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+	<GridView
+	    android:layout_marginLeft="20dp" 
+	    android:layout_marginRight="20dp"
+	    android:layout_marginTop="70dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/main_tv"
+	    android:id="@+id/main_gv"
+	    android:verticalSpacing="70dp"
+	    android:horizontalSpacing="50dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:numColumns="3"
+	    />
+</RelativeLayout>

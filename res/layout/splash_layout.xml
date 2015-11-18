@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/splash_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/splash_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:shadowColor="@color/red"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/splash_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="false"
+            android:progress="0"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</FrameLayout>

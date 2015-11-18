@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyTextView">
+        <attr name="tv_title" format="string"></attr>
+        <attr name="texton" format="string"></attr>
+        <attr name="textoff" format="string"></attr>
+    </declare-styleable>
+    <declare-styleable name="MyChooseTextview">
+        <attr name="tv_choose" format="string"></attr>
+    </declare-styleable>
+</resources>

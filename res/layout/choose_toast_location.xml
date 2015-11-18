@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp" 
+        android:paddingRight="30dp" 
+        android:paddingTop="10dp"
+        android:background="@drawable/call_locate_blue"
+        android:text="按住提示框拖到任意位置\n按手机返回键立即生效"
+        android:gravity="center_horizontal"
+        android:textSize="21sp"
+        />
+	<!-- 如果用文字横向居中且有换行，则每行都会居中 -->
+	<ImageView
+	    android:id="@+id/iv_drag"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/drag"
+	    />
+	<withCData><![CDATA[
+          <object class="MyClass" key="constant">
+          </object>
+        ]]>
+</LinearLayout>

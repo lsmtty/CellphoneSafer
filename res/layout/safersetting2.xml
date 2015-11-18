@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lsmtty="http://schemas.android.com/apk/res/com.example.cellphonesafer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    	
+	<TextView
+	    android:id="@+id/main_title"
+		style="@style/style_title"
+	    android:text="2.手机卡绑定"
+	    />
+	<TextView
+	    android:id="@+id/tv_msg"
+	    android:text="通过绑定手机卡" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/main_title"
+	    android:textSize="25sp"
+	    />
+	<TextView
+	    android:id="@+id/tv_msg2"
+	    android:text="下次重启手机如果发现SIM卡变化就会发送报警短信" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/tv_msg"
+	    android:textSize="23sp"
+	    />
+	<com.example.cellphonesaferactivity.MyJoB.MyTextView
+	    android:id="@+id/mv_bind"
+	    android:layout_below="@id/tv_msg2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    lsmtty:tv_title="点击绑定sim卡"
+	    lsmtty:texton="sim卡已经绑定"
+	    lsmtty:textoff="sim卡没有绑定"
+	    />
+	    
+	    
+	<ImageView 
+		android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="100dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/setup2"
+	    />
+	<Button
+	    android:drawableLeft="@drawable/previous"
+	    android:background="@drawable/button_green_selector"
+	    android:id="@+id/last"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="上一步" 
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginLeft="5dp"
+	    android:onClick="last"
+	    />
+	<Button
+	    android:drawableRight="@drawable/next"
+	    android:background="@drawable/button_green_selector"
+	    android:id="@+id/next"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="下一步" 
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginRight="5dp"
+	    android:onClick="next"
+	    />
+</RelativeLayout>
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="style_title">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:background">@color/green </item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="style_title_msg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableLeft">@android:drawable/star_big_on</item>
+    </style>
+
+    <style name="style_divider_img">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:background">@drawable/listview_divider</item>
+    </style>
+    <style name="style_chooseTool_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:background">@drawable/btn_normal_selector</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>
