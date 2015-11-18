@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    xmlns:lsmtty="http://schemas.android.com/apk/res/com.example.cellphonesafer"
+    >
+    
+     <TextView
+        android:id="@+id/setting_title"
+        style="@style/style_title"
+        android:text="进程管理设置" />
+	<!-- 放两个自定义选择控件 -->
+	<com.example.cellphonesaferactivity.MyJoB.MyTextView
+	    android:id="@+id/setting_showsystem"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/setting_title"
+	    lsmtty:texton="显示系统进程"
+	    lsmtty:textoff="隐藏系统进程"
+	    lsmtty:tv_title="显示系统进程设置"
+	    />
+	<com.example.cellphonesaferactivity.MyJoB.MyChooseTextview 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/setting_showsystem"
+	    android:id="@+id/choose_clear_time"
+	    lsmtty:tv_choose="自动清除时间"
+	    />
+</RelativeLayout>

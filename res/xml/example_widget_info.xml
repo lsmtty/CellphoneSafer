@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="300dp"
+ 	android:minHeight="50dp"
+ 	android:updatePeriodMillis="0"
+ 	android:initialLayout="@layout/widget_layout"
+ 	android:resizeMode="horizontal|vertical"
+    >
+    <!-- 设置更新时间为0，可以邮资机控制这个时间更新 -->
+</appwidget-provider>

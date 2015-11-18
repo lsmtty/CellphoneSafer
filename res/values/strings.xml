@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手机卫士</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="sample_device_admin">您将收到最安全的保护</string>
+    <string name="device_admin_sample">这里转入系统设备管理器</string>
+</resources>
